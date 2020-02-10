@@ -1,0 +1,116 @@
+@keyframes slideDown
+{
+	0%{top: -180px;}
+	50%{top: 40px;}
+	100%{top: 0px;}
+}
+@keyframes normalfrom
+{
+	from{width: 11%;}
+	to{width: 4%;}
+}
+html, body
+{
+	margin:0;
+	padding: 0;
+	background: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.blind
+{
+	position: relative;
+	background: #2388DA;
+	width: 3%;
+	padding: 10px;
+	margin:2px 0px;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: normalfrom 1s;
+	transition: 2s;
+	border-radius: 5px;
+	font-family: 'Raleway', sans-serif;	
+}
+.fa-blind
+{
+	margin-left: 15px;
+	transition: 3s;
+}
+a
+{
+	font-size: 50px;
+	text-decoration:none;
+	color: black;
+}
+span
+{
+	font-weight: bold;
+	color: black;
+	position: absolute;
+	font-size: 25px;
+	margin: 11px 0px 0px 20px;
+	transition: 2s;
+}
+.blind:hover
+{
+	width: 11%;
+}
+
+.blind:hover .fa-blind
+{
+	color: white;
+}
+.blind:hover span
+{
+	color: white;
+}
+.blind:hover b
+{
+	color: white;
+	transition: 3s;
+}
+/* Animated blocks*/
+div:not(.blind)
+{
+	margin-top: 7%;
+	float: left;
+	width: 25%;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: 1.5s;
+	overflow: hidden;
+}
+i:not(.fa-blind)
+{
+	font-size: 80px;
+	color: #2388DA;
+	transition: 1s;	
+	position: relative;
+}
+h2
+{
+	font-size: 60px;
+	color: #2388DA;
+	transition: 1s;
+	margin: 10px 0px -10px 0px;
+}
+p
+{
+	font-size: 26px;
+	transition: 0.7s;
+}
+div:hover:not(.blind)
+{	
+	background: #2388DA;
+}
+div:hover:not(.blind)>*
+{	
+	color: white;
+}
+div:hover:not(.blind) i
+{
+	animation: slideDown 3s;
+}
+
+/* Finish*/

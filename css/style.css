@@ -1,0 +1,94 @@
+@keyframes normalfrom
+{
+	from{width: 10%;}
+	to{width: 3%;}
+}
+html, body
+{
+	margin: 0;
+	padding: 0;
+	background:white;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+div
+{
+	position: relative;
+	background: #2388DA;
+	width: 3%;
+	padding: 10px;
+	margin:2px 0px;
+	white-space: nowrap;
+	overflow: hidden;
+	border-radius: 5px;
+	animation: normalfrom 1s;
+	transition: 2s;
+}
+a
+{
+	font-size: 50px;
+	text-decoration:none;
+	color: black;
+}
+span
+{
+	font-weight: bold;
+	color: black;
+	position: absolute;
+	font-size: 25px;
+	margin: 11px 0px 0px 20px;
+	font-family: 'Raleway', sans-serif;
+}
+.mail
+{
+	margin: 11px 0px 0px 25px;
+}
+div:hover
+{
+	width: 11%;
+}
+div:hover:not(.blind)
+{	
+	background: white;
+}
+p
+{
+	font-size: 30px;
+	margin: 20px;
+}
+.blind
+{
+	position: relative;
+	background: #2388DA;
+	width: 3%;
+	padding: 10px;
+	transition: 1.5s;
+	margin:2px 0px;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: normalfrom 1s;
+	border-radius: 5px;
+	font-family: 'Raleway', sans-serif;	
+}
+.fa-blind
+{
+	margin-left: 15px;
+	transition: 1.5s;
+}
+.blind:hover
+{
+	width: 11%;
+}
+
+.blind:hover .fa-blind
+{
+	color: white;
+}
+.blind:hover span
+{
+	color: white;
+}
+.blind:hover i
+{
+	color: white;
+	transition: 3s;
+}
